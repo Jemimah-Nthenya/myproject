@@ -3,3 +3,14 @@
     width: 80px;
     object-fit: cover;
 }
+#footer{
+    text-align: center;
+}
+.body{
+    background-color: rgb(203, 245, 234);
+    border-radius: 20px;
+}
+#contact{
+    font-size: x-small;
+    text-align: center;
+}
