@@ -64,3 +64,22 @@
     background-color: white;
     border-radius: 3px;
 }
+#navbrlink{
+  display: flex;  
+  display: flex;
+  gap: 10%;
+  font-size: x-small;
+
+}
+.bb{
+    height: 50vh;
+    min-height: 500px;
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    border-radius: 3px;
+}
+
