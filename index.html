@@ -3,43 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jemimah Nthenya Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="body">
+    <div id="header">
+      <div class="container">
         <nav>
-            <div id="navbar">
-            </div>
-            <div class="navlink">
-                <p><a class="active"href="index.html" style="text-decoration: none;">Home</a></p>
-                <p><a href="about.html" style="text-decoration: none;">About Me</a></p>
-                <p><a href="work.html" style="text-decoration: none;">Work</a></p>
-            </div>
-            
+            <img src="image/jem(1).png" class="jem(1).png" width="10%">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
-    
-    <div id="footer">
-    <div>
-        <img id="round" src="image/image.png" alt="">
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h2>Hi, I'm <span>Jemimah <br></span>from Kenya</h2>
+        </div>
+      </div>  
     </div>
-    
-    <h4>Jemimah Nthenya</h4><br><br>
-    <span class="para">
-        <p>Get to know me</p>
-    </span>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/wback.jpeg" alt="" width="30%" height="15%">
+                <div class="about-col-2">
+                    <h3 class="sub-title">About Me</h3>
+                    <p>Hey, I'm Jemimah, a curious and creative writer with a passion for storytelling. I've always been fascinated by the power of words to inspire, inform, and entertain, which is why I've dedicated my career to crafting compelling stories that connect with readers on a deep level.</p>
+                      
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web intefaces</li>
+                            <li><span>Web Development</span><br>Designing Web intefaces</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024</span><br>Designing Web intefaces</li>
+                            <li><span>2024</span><br>Designing Web intefaces</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024</span><br>Designing Web intefaces</li>
+                            <li><span>2024</span><br>Designing Web intefaces</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="contact">
-    <a href=mailto:"jemimahogonda@gmail.com">Reach out to me</a><br>
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    ------services---->
+    <div id="services">
+        <div class="container">
+            <h4 class="sub-title">My Services</h4> 
+            <div class="services-list">
+                <div>
+                    <h3>Web Design</h3>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h3>UI/UX Design</h3>
+                    <a href="#">learn more</a>
+                </div>
+                
 
-
-<a href="https://www.instagram.com/accounts/emailsignup/" class="fa fa-instagram"></a>
-<a href="https://twitter.com/twitt_login?lang=en" class="fa fa-twitter"></a>
-
+            </div>
+        </div>
     </div>
-    
-   
+  <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>  
 </body>
 </html>
